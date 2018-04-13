@@ -4,7 +4,7 @@ MAINTAINER Todd Baert <toddbaert@gmail.com>
 
 USER root
 
-COPY app.js package.json package-lock.json ./
+COPY app.js lead.js leadsResource.js package.json package-lock.json ./
 
 RUN npm install
 
