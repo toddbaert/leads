@@ -1,4 +1,4 @@
-function route(app, db, leadSchema, validate){
+function route(app, db, leadSchema, leadsCollection, validate){
     app.get("/api/leads", function(req, res){
         db.collection(leadsCollection).find().toArray().then(function(result){
             res.status(200).json(result);
